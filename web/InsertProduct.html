@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <!--     //URL?para1=value&para2=value2-->
+    <body>
+        <!--        <form action="MyServlet_URL" method="post">
+                 <p>username    <input type="text" name="userName" value="" />
+                 <p>password    <input type="password" name="password" value="" />
+                 <p> hobbies    <input type="checkbox" name="hb" value="1" />Reading
+                             <input type="checkbox" name="hb" value="2" />Shopping
+                             <input type="checkbox" name="hb" value="3" />Travel
+                             <input type="checkbox" name="hb" value="4" />TV
+                 <p>    <input type="submit"  value="login" /> 
+                        <input type="reset"  value="Clear" />
+                </form>-->
+
+        <form action="ProductURL" method="post">
+            <input type="hidden" name = "service" value="insertProduct">
+            <table cellpadding="5">
+                <!--                <tr>
+                                    <td>ProductID:</td>
+                                    <td><input type="text" name="ProductID" value=""></td>
+                                </tr>-->
+                <tr>
+                    <td>ProductName:</td>
+                    <td><input type="text" name="ProductName" value=""></td>
+                </tr>
+                <tr>
+                    <td>SupplierID:</td>
+                    <td><input type="text" name="SupplierID" value=""></td>
+                </tr>
+                <tr>
+                    <td>CategoryID:</td>
+                    <td><input type="text" name="CategoryID" value="">
+                </tr>
+                <tr>
+                    <td>QuantityPerUnit:</td>
+                    <td><input type="text" name="QuantityPerUnit" value=""></td>
+                </tr>
+                <tr>
+                    <td>UnitPrice:</td>
+                    <td><input type="text" name="UnitPrice" value=""></td>
+                </tr>
+                <tr>
+                    <td>UnitsInStock:</td>
+                    <td><input type="text" name="UnitsInStock" value=""></td>
+                </tr>
+                <tr>
+                    <td>UnitsOnOrder:</td>
+                    <td><input type="text" name="UnitsOnOrder" value=""></td>
+                </tr>
+                <tr>
+                    <td>ReorderLevel:</td>
+                    <td><input type="text" name="ReorderLevel" value=""></td>
+                </tr>
+                <tr>
+                    <td>Discontinued:</td>
+                    <td>
+                        <input type="radio" name="Discontinued" value="1">True
+                        <input type="radio" name="Discontinued" value="0">False
+                    </td>
+                </tr>
+            </table>
+            <p> <input type="submit" value="Add" />
+                <input type="reset" value="Clear" />  
+        </form>
+
+        <p><a href="MyServlet_URL?para1=abc&para2=100"> send </a>
+    </body>
+</html>
